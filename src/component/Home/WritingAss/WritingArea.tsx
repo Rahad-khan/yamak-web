@@ -13,14 +13,14 @@ const WritingArea = () => {
             <div className='row'>
                 <div className='col-12 col-lg-7'>
                     <p>Enter input to get <span className='text-primary text-opacity-75'>Writing Assistant</span></p>
-                    <div className='d-flex align-items-center'>
-                        <div>
+                    <div className='d-flex flex-wrap align-items-center'>
+                        <div className='d-flex'>
                             <label htmlFor="count">Words Count: </label>
-                            <input type="number" defaultValue={0} name="" id="count" className='' />
+                            <input type="number" defaultValue={0} name="" id="count" className='' style={{ width: "40px" }} />
                         </div>
-                        <div className='d-flex align-items-center mx-5'>
+                        <div className='d-flex align-items-center mx-1'>
                             <label htmlFor="prompt">Prompt:</label>
-                            <select className="form-select ms-2" aria-label="Default select example" id='prompt'>
+                            <select className="form-select ms-1" aria-label="Default select example" id='prompt'>
                                 <option selected>Select</option>
                                 <option value="1">One</option>
                                 <option value="2">Two</option>
@@ -44,12 +44,12 @@ const WritingArea = () => {
                         </div>
                         <div className='shadow p-3'>
                             <div>
-                                <ul className='list-unstyled d-flex gap-4 m-0'>
+                                <ul className='list-unstyled d-flex flex-wrap gap-4 m-0'>
                                     <li><button className='border border-1 rounded bg-white fw-bold'>B</button></li>
                                     <li><button className='border border-1 rounded bg-white fw-bold fwt-italic px-2'>I</button></li>
-                                    <li><p className='mb-2'>hyperlink</p></li>
-                                    <li><p className='mb-2'>text cut</p></li>
-                                    <li><p className='mb-2'>underline</p></li>
+                                    <li><button className='mb-2 border border-0 bg-white'>hyperlink</button></li>
+                                    <li><button className='mb-2 border border-0 bg-white'>text cut</button></li>
+                                    <li><button className='mb-2 border border-0 bg-white'>underline</button></li>
                                 </ul>
                             </div>
                             <hr className='m-0' />
