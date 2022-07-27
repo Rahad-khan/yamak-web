@@ -13,10 +13,10 @@ const WritingArea = () => {
             <div className='row'>
                 <div className='col-12 col-lg-7'>
                     <p>Enter input to get <span className='text-primary text-opacity-75'>Writing Assistant</span></p>
-                    <div className='d-flex'>
+                    <div className='d-flex align-items-center'>
                         <div>
                             <label htmlFor="count">Words Count: </label>
-                            <input type="number" defaultValue={0} name="" id="count" />
+                            <input type="number" defaultValue={0} name="" id="count" className='' />
                         </div>
                         <div className='d-flex align-items-center mx-5'>
                             <label htmlFor="prompt">Prompt:</label>
@@ -39,8 +39,22 @@ const WritingArea = () => {
                     </div>
 
                     <div>
-
-                        <textarea className='border border-0 shadow w-100' name="" id="" rows={20}></textarea>
+                        <div className="hstack gap-3 mt-3">
+                            <div className="ms-auto"><small>word: 00 | character: 0/250</small></div>
+                        </div>
+                        <div className='shadow p-3'>
+                            <div>
+                                <ul className='list-unstyled d-flex gap-4 m-0'>
+                                    <li><button className='border border-1 rounded bg-white fw-bold'>B</button></li>
+                                    <li><button className='border border-1 rounded bg-white fw-bold fwt-italic px-2'>I</button></li>
+                                    <li><p className='mb-2'>hyperlink</p></li>
+                                    <li><p className='mb-2'>text cut</p></li>
+                                    <li><p className='mb-2'>underline</p></li>
+                                </ul>
+                            </div>
+                            <hr className='m-0' />
+                            <textarea className='border border-0 w-100 mt-3 form-control' name="" id="" rows={20}></textarea>
+                        </div>
                     </div>
 
                 </div>

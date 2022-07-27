@@ -7,7 +7,7 @@ import { FaUserCircle } from 'react-icons/fa';
 const Heaader = () => {
     return (
         <nav className="navbar navbar-expand-lg">
-            <div className="container-fluid">
+            <div className="container-fluid px-lg-4">
                 <Link className="fs-2 navbar-brand d-none d-lg-block" to={`/`}><span className='fw-bold text-primary'>Yamak</span>.ai</Link>
 
                 <button className="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">

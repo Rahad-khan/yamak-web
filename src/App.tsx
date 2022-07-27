@@ -7,8 +7,11 @@ function App() {
   return (
     <div>
       <Heaader />
-      <WritingAss />
-      <WritingArea />
+      <main className='container-fluid px-lg-5 mt-5'>
+        <WritingAss />
+        <WritingArea />
+      </main>
+
     </div>
   );
 }
