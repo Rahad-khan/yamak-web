@@ -1,6 +1,6 @@
 import React from 'react';
 
-const WritingAss = () => {
+const WritingAss: React.FC = () => {
     return (
         <section>
             <div className='d-flex justify-content-between align-items-center'>

@@ -3,7 +3,7 @@ import Heaader from './component/Header/Heaader';
 import WritingArea from './component/Home/WritingAss/WritingArea';
 import WritingAss from './component/Home/WritingAss/WritingAss';
 
-function App() {
+const App: React.FC = () => {
   return (
     <div>
       <Heaader />

@@ -4,7 +4,7 @@ import { IoIosSync, IoIosArrowDropleftCircle } from 'react-icons/io';
 import { FaUserCircle } from 'react-icons/fa';
 
 
-const Heaader = () => {
+const Heaader: React.FC = () => {
     return (
         <nav className="navbar navbar-expand-lg">
             <div className="container-fluid px-lg-4">
